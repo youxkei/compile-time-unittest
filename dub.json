@@ -1,0 +1,6 @@
+{
+    "name": "compile-time-unittest",
+    "description": "A minimal mixin template which enables build-in unittests to run at compile time.",
+    "license": "CC0",
+    "dependencies": {}
+}
