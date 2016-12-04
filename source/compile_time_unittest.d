@@ -5,6 +5,7 @@ mixin template enableCompileTimeUnittest(string module_ = __MODULE__)
     version (unittest)
     {
         static import std.algorithm;
+        mixin("static import " ~ module_ ~ ";");
 
         static if (std.algorithm.startsWith(mixin (module_).stringof, "module"))
         {
